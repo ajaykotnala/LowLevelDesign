@@ -40,6 +40,8 @@
   "scripts": {
     "basicfactory": "npx -y ts-node basic-factory-pattern.ts",
     "advancefactory": "npx -y ts-node advace-factory-pattern.ts",
+    "builder": "npx -y ts-node builder-pattern.ts",
+    "prototype": "npx -y ts-node prototype-pattern.ts",
     "run": "npm run run:factory"
    
   },
