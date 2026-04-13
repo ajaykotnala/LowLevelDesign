@@ -1,6 +1,6 @@
 interface notification {
     send(): void;
-}
+} 
 
 class SMSNotification implements notification {
     send() {
