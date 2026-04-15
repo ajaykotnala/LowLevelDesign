@@ -1,5 +1,5 @@
 # LLD Design Patterns (TypeScript)
-
+ 
 This repository is for learning and implementing software design patterns in TypeScript.
 It is intended to include:
 
