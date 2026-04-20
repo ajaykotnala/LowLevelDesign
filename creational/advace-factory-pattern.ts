@@ -1,7 +1,7 @@
 interface notification {
     send(): void;
 }
-
+ 
 class SMSNotification implements notification {
     send() {
         console.log("SMS Notification sent");

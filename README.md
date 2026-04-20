@@ -39,13 +39,4 @@ npx -y ts-node factory-pattern.ts
 - `npm run run:factory` - runs the factory pattern sample
 - `npm run run:file -- <file-name>.ts` - runs any pattern file
 
-## Suggested repo structure
-
-As this grows, you can organize files like this:
-
-```text
-creational/
-structural/
-behavioral/
-```
 
