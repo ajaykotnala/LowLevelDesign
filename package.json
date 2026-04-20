@@ -38,11 +38,14 @@
   },
   "packageManager": "npm@8.19.2", 
   "scripts": {
-    "basicfactory": "npx -y ts-node basic-factory-pattern.ts",
-    "advancefactory": "npx -y ts-node advace-factory-pattern.ts",
-    "builder": "npx -y ts-node builder-pattern.ts",
-    "prototype": "npx -y ts-node prototype-pattern.ts",
-    "run": "npm run run:factory"
+    "basicfactory": "npx -y ts-node creational/basic-factory-pattern.ts",
+    "advancefactory": "npx -y ts-node creational/advace-factory-pattern.ts",
+    "builder": "npx -y ts-node creational/builder-pattern.ts",
+    "prototype": "npx -y ts-node creational/prototype-pattern.ts",
+    "decorator": "npx -y ts-node structural/decorator.ts",
+    "coffeedecorator":"npx -y ts-node structural/coffee.decorator.ts",
+    "adaptor":"npx -y ts-node structural/adaptor.ts",
+    "run": "npm run basicfactory"
    
   },
   "devDependencies": {
