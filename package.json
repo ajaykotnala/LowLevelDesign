@@ -37,6 +37,7 @@
   "scripts": {
     "build": "tsc",
     "run": "npm run basicfactory",
+    "singleton": "npm run build && node dist/creational/singleton.pattern.js",
     "basicfactory": "npm run build && node dist/creational/basic-factory-pattern.js",
     "advancefactory": "npm run build && node dist/creational/advace-factory-pattern.js",
     "abstractfactory": "npm run build && node dist/creational/abstract.factory.js",
