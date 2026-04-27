@@ -21,7 +21,7 @@ class oneplus {
     }
 }
 
-class chargeradaptor implements chargertype {
+class chargeradapter implements chargertype {
     private _oneplus
     constructor(oneplus: oneplus) {
         this._oneplus = oneplus;
@@ -36,8 +36,8 @@ class chargeradaptor implements chargertype {
         const iphonecharger = new iphone();
         iphonecharger.typeccharging();
 
-        const chargeradaptorInstance = new chargeradaptor(new oneplus());
-        chargeradaptorInstance.typeccharging();
+        const chargeradapterInstance = new chargeradapter(new oneplus());
+        chargeradapterInstance.typeccharging();
     }
 } */
 
@@ -63,7 +63,7 @@ class mastercard {
     }
 }
 
-class paymentadaptor implements payment {
+class paymentadapter implements payment {
     private _mastercard
     constructor(mastercard: mastercard) {
         this._mastercard = mastercard;
@@ -78,8 +78,8 @@ class clientcode {
         const rupeecardInstance = new rupeecard();
         rupeecardInstance.pay(10);
 
-        const paymentadaptorInstance = new paymentadaptor(new mastercard())
-        paymentadaptorInstance.pay(20);
+        const paymentadapterInstance = new paymentadapter(new mastercard())
+        paymentadapterInstance.pay(20);
 
     }
 }

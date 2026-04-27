@@ -15,14 +15,10 @@ SOLID helps us write code that is:
 
 Think of SOLID as "good habits" for object-oriented design.
 
-```mermaid
-flowchart LR
-  A[Messy Code] --> B[Frequent Bugs]
-  B --> C[Slow Changes]
-  D[SOLID Principles] --> E[Cleaner Design]
-  E --> F[Faster Development]
-  E --> G[Better Testing]
-```
+### Design
+
+![SOLID S](visuals/SOLID.png)
+
 
 ---
 
@@ -168,7 +164,7 @@ class Notification {
 
 ---
 
-## Break Tweeking Questions
+## Brain Tweeking Questions
 
 - Why is SRP useful in team projects?
 - Can you give a real example of OCP from daily life?

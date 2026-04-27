@@ -7,6 +7,7 @@ class texteditor implements editor {
     render() {
         console.log("basic text editor render");
     }
+
 }
 
 class spellcheck implements editor {
@@ -69,6 +70,7 @@ class clientcode {
         // autosaveInstance.render();
 
         const previewInstance: editor = new preview(new autosave(new spellcheck(new texteditor())));
+       // const justpreview = new preview(new texteditor())
         previewInstance.render();
     }
 }
