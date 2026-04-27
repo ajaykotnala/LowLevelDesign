@@ -18,9 +18,6 @@
     "url": "https://github.com/ajaykotnale/lld-design-patterns/issues"
   },
   "homepage": "https://github.com/ajaykotnale/lld-design-patterns#readme",
-  "dependencies": {
-    "typescript": "^6.0.2"
-  },
   "engines": {
     "node": ">=14.0.0"
   },
@@ -36,20 +33,23 @@
       "require": "./dist/index.cjs"
     }
   },
-  "packageManager": "npm@8.19.2", 
+  "packageManager": "npm@8.19.2",
   "scripts": {
+    "build": "tsc",
     "run": "npm run basicfactory",
-    "basicfactory": "npx -y ts-node creational/basic-factory-pattern.ts",
-    "advancefactory": "npx -y ts-node creational/advace-factory-pattern.ts",
-    "builder": "npx -y ts-node creational/builder-pattern.ts",
-    "prototype": "npx -y ts-node creational/prototype-pattern.ts",
-    "decorator": "npx -y ts-node structural/decorator.ts",
-    "coffeedecorator":"npx -y ts-node structural/coffee.decorator.ts",
-    "adaptor":"npx -y ts-node structural/adaptor.ts",
-    "composite":"npx -y ts-node structural/composite.ts"
-   
+    "basicfactory": "npm run build && node dist/creational/basic-factory-pattern.js",
+    "advancefactory": "npm run build && node dist/creational/advace-factory-pattern.js",
+    "abstractfactory": "npm run build && node dist/creational/abstract.factory.js",
+    "builder": "npm run build && node dist/creational/builder-pattern.js",
+    "prototype": "npm run build && node dist/creational/prototype-pattern.js",
+    "decorator": "npm run build && node dist/structural/decorator.js",
+    "coffeedecorator": "npm run build && node dist/structural/coffee.decorator.js",
+    "adaptor": "npm run build && node dist/structural/adaptor.js",
+    "composite": "npm run build && node dist/structural/composite.js"
   },
   "devDependencies": {
-    "typescript": "^6.0.2"
+    "@types/node": "^25.6.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
   }
 }
