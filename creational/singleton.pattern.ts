@@ -1,5 +1,5 @@
 interface notification {
-    getFailedNotification():void;
+    getFailedNotification(): void;
 }
 
 class smsFailedNotification implements notification {
@@ -14,20 +14,20 @@ class emailFailedNotification implements notification {
     }
 }
 
-class notificationFactory{
+class notificationFactory {
     private static notificationfactoryinstance: notificationFactory;
-    private constructor(){}
-    public static getnotificationfactoryinstance():notificationFactory{
-        if(!notificationFactory.notificationfactoryinstance){
+    private constructor() { }
+    public static getnotificationfactoryinstance(): notificationFactory {
+        if (!notificationFactory.notificationfactoryinstance) {
             notificationFactory.notificationfactoryinstance = new notificationFactory();
         }
         return notificationFactory.notificationfactoryinstance;
     }
     public sendFailedNotification(notificationtype: string): notification {
-        if(notificationtype === "sms"){
+        if (notificationtype === "sms") {
             return new smsFailedNotification();
         }
-        if(notificationtype === "email"){
+        if (notificationtype === "email") {
             return new emailFailedNotification();
         }
         throw new Error("invalid notification type");
@@ -35,18 +35,18 @@ class notificationFactory{
 }
 
 
-class clientcode{
-    main(){
+class clientcode {
+    main() {
         let factoryinstance = notificationFactory.getnotificationfactoryinstance();
         let factoryinstance2 = notificationFactory.getnotificationfactoryinstance();
         console.log(factoryinstance === factoryinstance2);
         factoryinstance = null;
-        factoryinstance =notificationFactory.getnotificationfactoryinstance();
+        factoryinstance = notificationFactory.getnotificationfactoryinstance();
         console.log(factoryinstance === factoryinstance2);
-       // factoryinstance.sendFailedNotification("sms").getFailedNotification();
+        // factoryinstance.sendFailedNotification("sms").getFailedNotification();
         //factoryinstance.sendFailedNotification("email").getFailedNotification();
     }
 }
 
 new clientcode().main();
-export {};
+export { };
