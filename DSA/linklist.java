@@ -32,6 +32,8 @@ class linklist{
             head = head.next;
         }
     }
+
+    void deletenode(int data){}
 }
 
 class clientdemo {
