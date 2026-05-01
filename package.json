@@ -46,7 +46,9 @@
     "decorator": "npm run build && node dist/structural/decorator.js",
     "coffeedecorator": "npm run build && node dist/structural/coffee.decorator.js",
     "adaptor": "npm run build && node dist/structural/adaptor.js",
-    "composite": "npm run build && node dist/structural/composite.js"
+    "composite": "npm run build && node dist/structural/composite.js",
+    "facade": "npm run build && node dist/structural/facade.js",
+    "proxy": "npm run build && node dist/structural/proxy.js"
   },
   "devDependencies": {
     "@types/node": "^25.6.0",

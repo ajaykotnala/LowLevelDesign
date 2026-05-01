@@ -1,45 +1,45 @@
-interface chargertype {
-    typeccharging(): void
-}
+// interface chargertype {
+//     typeccharging(): void
+// }
 
-class iphone implements chargertype {
-    typeccharging(): void {
-        console.log("Type C charger is compatiable")
-    }
-}
+// class iphone implements chargertype {
+//     typeccharging(): void {
+//         console.log("Type C charger is compatiable")
+//     }
+// }
 
-class iphone17 implements chargertype {
-    typeccharging(): void {
-        console.log("Type C charger is compatiable on iphone 17")
-    }
-}
+// class iphone17 implements chargertype {
+//     typeccharging(): void {
+//         console.log("Type C charger is compatiable on iphone 17")
+//     }
+// }
 
-// now one plus 6 is not tyepc -- lets say its usb type
-class oneplus {
-    usbcharging(): void {
-        console.log("USB charger is compatiable")
-    }
-}
+// // now one plus 6 is not tyepc -- lets say its usb type
+// class oneplus {
+//     usbcharging(): void {
+//         console.log("USB charger is compatiable")
+//     }
+// }
 
-class chargeradapter implements chargertype {
-    private _oneplus
-    constructor(oneplus: oneplus) {
-        this._oneplus = oneplus;
-    }
-    typeccharging(): void {
-        this._oneplus.usbcharging();
-    }
-}
+// class chargeradapter implements chargertype {
+//     private _oneplus
+//     constructor(oneplus: oneplus) {
+//         this._oneplus = oneplus;
+//     }
+//     typeccharging(): void {
+//         this._oneplus.usbcharging();
+//     }
+// }
 
-/* class clientcode {
-    main() {
-        const iphonecharger = new iphone();
-        iphonecharger.typeccharging();
+// /* class clientcode {
+//     main() {
+//         const iphonecharger = new iphone();
+//         iphonecharger.typeccharging();
 
-        const chargeradapterInstance = new chargeradapter(new oneplus());
-        chargeradapterInstance.typeccharging();
-    }
-} */
+//         const chargeradapterInstance = new chargeradapter(new oneplus());
+//         chargeradapterInstance.typeccharging();
+//     }
+// } */
 
 // ----------------------------------------------------------
 

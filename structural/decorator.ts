@@ -24,7 +24,6 @@ class spellcheck implements editor {
     render(): void {
         this._editor.render();
         this.fspellcheck()
-
     }
 
 }
@@ -70,7 +69,7 @@ class clientcode {
         // autosaveInstance.render();
 
         const previewInstance: editor = new preview(new autosave(new spellcheck(new texteditor())));
-       // const justpreview = new preview(new texteditor())
+        // const justpreview = new preview(new texteditor())
         previewInstance.render();
     }
 }

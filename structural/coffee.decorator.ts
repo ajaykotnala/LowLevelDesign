@@ -4,7 +4,7 @@ interface coffee {
 
 //basic coffee
 //black coffee -- remove milk
-// sugerless -- remove sugar
+//sugerless -- remove sugar
 
 class basiccoffee implements coffee {
     serve(): void {
