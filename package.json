@@ -1,23 +1,23 @@
 {
-  "name": "lld-design-patterns",
+  "name": "lld-design-s",
   "version": "0.1.0",
   "private": true,
   "author": "Ajay kotnale",
   "license": "MIT",
-  "description": "Design Patterns in TypeScript",
+  "description": "Design s in TypeScript",
   "keywords": [
-    "design-patterns",
+    "design-s",
     "typescript",
     "javascript"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ajaykotnale/lld-design-patterns"
+    "url": "https://github.com/ajaykotnale/lld-design-s"
   },
   "bugs": {
-    "url": "https://github.com/ajaykotnale/lld-design-patterns/issues"
+    "url": "https://github.com/ajaykotnale/lld-design-s/issues"
   },
-  "homepage": "https://github.com/ajaykotnale/lld-design-patterns#readme",
+  "homepage": "https://github.com/ajaykotnale/lld-design-s#readme",
   "engines": {
     "node": ">=14.0.0"
   },
@@ -37,18 +37,34 @@
   "scripts": {
     "build": "tsc",
     "run": "npm run basicfactory",
-    "singleton": "npm run build && node dist/creational/singleton.pattern.js",
-    "basicfactory": "npm run build && node dist/creational/basic-factory-pattern.js",
-    "advancefactory": "npm run build && node dist/creational/advace-factory-pattern.js",
+  
+    "singleton": "npm run build && node dist/creational/singleton.js",
+    "basicfactory": "npm run build && node dist/creational/basic-factory.js",
+    "advancefactory": "npm run build && node dist/creational/advace-factory.js",
     "abstractfactory": "npm run build && node dist/creational/abstract.factory.js",
-    "builder": "npm run build && node dist/creational/builder-pattern.js",
-    "prototype": "npm run build && node dist/creational/prototype-pattern.js",
+    "builder": "npm run build && node dist/creational/builder.js",
+    "prototype": "npm run build && node dist/creational/prototype.js",
+    
     "decorator": "npm run build && node dist/structural/decorator.js",
     "coffeedecorator": "npm run build && node dist/structural/coffee.decorator.js",
-    "adaptor": "npm run build && node dist/structural/adaptor.js",
+    "adapter": "npm run build && node dist/structural/adapter.js",
     "composite": "npm run build && node dist/structural/composite.js",
     "facade": "npm run build && node dist/structural/facade.js",
-    "proxy": "npm run build && node dist/structural/proxy.js"
+    "proxy": "npm run build && node dist/structural/proxy.js",
+    "flyweight": "npm run build && node dist/structural/flyweight.js",
+    "bridge": "npm run build && node dist/structural/bridge.js",
+    
+    
+    "cor": "npm run build && node dist/behavioral/cor.js",
+    "observer": "npm run build && node dist/behavioral/observer.js",
+    "state": "npm run build && node dist/behavioral/test.js",
+    "strategy": "npm run build && node dist/behavioral/strategy.js",
+    "command": "npm run build && node dist/behavioral/command.js",
+    "iterator": "npm run build && node dist/behavioral/iterator.js",
+    "mediator": "npm run build && node dist/behavioral/mediator.js",
+    "memento": "npm run build && node dist/behavioral/memento.js",
+    "template": "npm run build && node dist/behavioral/template.js",
+    "visitor": "npm run build && node dist/behavioral/visitor.js"
   },
   "devDependencies": {
     "@types/node": "^25.6.0",
