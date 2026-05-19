@@ -1,5 +1,3 @@
-// package week5_onwards_interview_ques.week_6;
-
 import java.util.HashMap;
 
 /*
@@ -38,10 +36,12 @@ class DLL{
     }   
 
     void addToHead(Node node){
-        node.next = head.next;
+       // node.next = head.next;
         node.next.prev = node;
         head.next = node;
+
         node.prev = head;
+        node.next = tail;
     }
 
     void removeNode(Node node){
