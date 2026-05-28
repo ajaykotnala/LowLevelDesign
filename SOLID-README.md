@@ -178,4 +178,3 @@ class Notification {
 
 SOLID is not about making code "fancy."  
 It is about making change safe, predictable, and fast.
-

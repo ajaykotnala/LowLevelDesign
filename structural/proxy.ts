@@ -22,19 +22,19 @@ class DatabaseProxy implements IDatabase {
     }
 
     query(sql: string): any {
-        // ① Protection proxy - check role
+        // 1 Protection proxy - check role
         if (this.currentUser !== "admin" && sql.includes("DELETE")) {
             console.log(`[PROXY] Access denied for user: ${this.currentUser}`);
             return null;
         }
 
-        // ② Caching proxy - return cached result if available
+        // 2 Caching proxy - return cached result if available
         if (this.cache.has(sql)) {
             console.log(`[PROXY] Cache hit for: ${sql}`);
             return this.cache.get(sql);
         }
 
-        // ③ Virtual proxy - create real object only on first actual use
+        // 3 Virtual proxy - create real object only on first actual use
         if (!this.realDb) {
             this.realDb = new RealDatabase();
             console.log("[PROXY] RealDatabase created (lazy init)");

@@ -1,3 +1,5 @@
+
+
 import java.util.HashMap;
 
 /*
@@ -36,12 +38,13 @@ class DLL{
     }   
 
     void addToHead(Node node){
-       // node.next = head.next;
-        node.next.prev = node;
-        head.next = node;
-
+        Node firstNode = head.next;
+        node.next = firstNode;
         node.prev = head;
-        node.next = tail;
+
+        firstNode.prev = node;
+        head.next = node;
+        
     }
 
     void removeNode(Node node){

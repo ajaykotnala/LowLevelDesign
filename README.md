@@ -39,4 +39,3 @@ npx -y ts-node factory-pattern.ts
 - `npm run run:factory` - runs the factory pattern sample
 - `npm run run:file -- <file-name>.ts` - runs any pattern file
 
-
