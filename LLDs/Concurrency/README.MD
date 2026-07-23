@@ -127,3 +127,34 @@ while (true) {
 | Coordination - Consumer missing new work | Blocking Queue | Consumer sleeps and wakes on arrival |
 | Coordination - Producer overwhelming consumer | Bounded Blocking Queue | Queue cap applies backpressure |
 | Scarcity - Too many API calls at once | Semaphore | Permit pool limits concurrency |
+
+
+
+## Summary for problems
+**Correctness** is the most standard of the three. You'll see it everywhere in concurrency literature. Common substitute terms and concepts under it:
+
+**Thread safety**  — the most widely used industry term
+**Race conditions** — the specific bug correctness tries to prevent
+**Data races** — lower-level term (two threads accessing same memory unsynchronized)
+**Mutual exclusion** — the mechanism (locks, synchronized blocks)
+
+
+**Coordination** is a reasonable term but not a fixed one. The more common terms you'll encounter:
+
+**Synchronization** — the standard academic/industry term (Java's synchronized, etc.)
+**Producer-consumer problem** — the classic named problem your notes describe
+**Inter-thread communication** — used in Java docs specifically
+**Signaling** — threads signaling each other (wait/notify)
+
+
+**Scarcity** is the least standard of the three — it's an intuitive label, not a recognized term. The real terms in this space:
+
+**Resource management** — the broad category
+**Rate limiting** — what a semaphore often enforces in practice
+**Throttling** — limiting concurrent access to protect a resource
+**Bounded concurrency** — more precise technical term for the semaphore pattern
+
+
+
+
+Every Developer Hits These 3 Concurrency Problems. Here's How to Solve Them
